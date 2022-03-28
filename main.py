@@ -43,17 +43,15 @@ with requests.session() as s:
     a = s.post(loginUrl, data = payload)
     result = s.get(f'https://students.genesisedu.com/{sID}/parents?tab1=studentdata&tab2=gradebook&tab3=weeklysummary&action=form&studentid={id}')
     soup = BeautifulSoup(result.text, "html.parser")
-    while i < 99:
-        try:
-            graderaw = soup.find_all("div", {"style": "text-decoration: underline"})[i]
-            grade = graderaw.text.strip()
-            grades.append(grade)
-            className = soup.find_all("span", {"class": "categorytab"})[i]
-            classer = className.text.strip()
-            classes.append(classer)
-            i += 1
-        except:
-            i += 99
+    graderaw = soup.find_all("div", {"style": "text-decoration: underline"})
+    for i in len(graderaw):
+        grade = graderaw[i].text.strip()
+        grades.append(grade)
+        className = soup.find_all("span", {"class": "categorytab"})[i]
+        classer = className.text.strip()
+        classes.append(classer)
+    print(grades)
+    print(classes)
 
 
 x = 1
