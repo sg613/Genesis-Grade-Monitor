@@ -7,7 +7,7 @@ Guide:
    **ONCE INSTALLED YOU MUST RUN THE COMMAND ``pip install -r requirements.txt``**
    **NECESARY STEPS TO RUN THE PROGRAM BELOW**
     
-    Open the login.txt file and replace each placeholder with your information
+    Open the .env file and replace each placeholder with your information
     
     **YOU MUST REPLACE EACH ITEM IN THE SAME LINE THE PLACEHOLDER WAS**
     
@@ -20,5 +20,7 @@ Guide:
     For the fourth line, replace with your school's genesis id (look at the link from your genesis home page and copy what is between the two slashes https://students.genesisedu.com/(Your schools genesis id should be here)/
    
     For the fifth line, replace with your discord webhook (heres a video on how to get one **Completely Free!!** https://www.youtube.com/watch?v=fKksxz2Gdnc
+
+    For the sixth line, replace with how fast you want the program to monitor (in seconds) **I RECOMMEND A DELAY OF AT LEAST 300**
     
 THANK YOU SO MUCH HOPE THIS WORKS!!! If you have any issues/errors, please let me know through this github repo (https://github.com/sg613/Genesis-Grade-Monitor/issues)
