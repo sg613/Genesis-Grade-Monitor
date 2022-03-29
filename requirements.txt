@@ -1,0 +1,4 @@
+requests >= 2.26.0
+discord >= 1.7.3
+pandas  >= 1.4.1
+python-dotenv >= 0.20.0
